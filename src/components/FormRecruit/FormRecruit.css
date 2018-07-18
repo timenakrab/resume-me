@@ -1,0 +1,25 @@
+.tabs .tab a {
+    color: #000;
+}
+
+.tabs .tab a:hover, .tabs .tab a.active {
+    background-color: #d93;
+    color: #fff;
+}
+
+.tabs .indicator {
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    background-color: #dd9933;
+    will-change: left, right;
+}
+
+.input-field > label::after { 
+    content: "*";
+    color: red;
+}
+
+.bg-gold{
+    background-color: rgb(221, 153, 51);
+}

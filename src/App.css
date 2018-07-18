@@ -1,0 +1,18 @@
+.body-page {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+  font-family: supermarket;
+}
+
+.radius-5 {
+  border-radius: 5px
+}
+
+.radius-10 {
+  border-radius: 10px;
+}

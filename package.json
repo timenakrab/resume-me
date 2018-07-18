@@ -1,0 +1,25 @@
+{
+  "name": "resume-me",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "http://localhost",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "chart.js": "^2.7.2",
+    "datatables.net": "^1.10.18",
+    "firebase": "^4.6.2",
+    "jquery": "^3.3.1",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-materialize": "^2.3.2",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.1.4",
+    "sweetalert2": "^7.20.7"
+  },
+  "scripts": {
+    "start": "set PORT=5555 && react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
