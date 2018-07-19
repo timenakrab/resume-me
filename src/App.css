@@ -21,6 +21,10 @@ main {
   border-radius: 10px;
 }
 
+.font-18 {
+  font-size: 18px;
+}
+
 .font-25 {
   font-size: 25px;
 }
