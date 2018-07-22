@@ -64,10 +64,10 @@ export default class IndexPage extends Component {
                                 <h5 className="text-redpink">SHOPPING ONLINE</h5>
                                 <Row>
                                     <Col s={6}>
-                                        <MediaBox src="./assets/Frontend-Dev-Jobs.jpg" caption="SHOPPING ONLINE" width="100%"/>
+                                        <MediaBox src="./work/shopping/shopping1.png" caption="SHOPPING ONLINE" width="100%"/>
                                     </Col>
                                     <Col s={6}>
-                                        <MediaBox src="./assets/Frontend-Dev-Jobs.jpg" caption="SHOPPING ONLINE" width="100%"/>
+                                        <MediaBox src="./work/shopping/shopping2.png" caption="SHOPPING ONLINE" width="100%"/>
                                     </Col>
                                 </Row>
                             </Col>
