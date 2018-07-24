@@ -1,8 +1,12 @@
 #nav-resume {
     background-color: #ff5253;
 }
-#nav-resume li a {
+#nav-resume ul:first-child li a {
     color: white;
+}
+
+#nav-resume ul:last-child li a {
+    color: black;
 }
 
 
