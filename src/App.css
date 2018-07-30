@@ -9,8 +9,8 @@ main {
   font-family: supermarket;
 }
 
-.text-redpink {
-  color: #ff5253;
+.text-orangefox {
+  color: #f99324;
 }
 
 .radius-5 {
@@ -35,8 +35,8 @@ main {
 
 .btn-contact-now , .btn-contact-now:hover {
   background: #fff;
-  color: #ff5253;
-  border: 1px solid #ff5253;
+  color: #f99324;
+  border: 1px solid #f99324;
   border-radius: 20px;
   font-size: large;
   height: 50px;
@@ -44,9 +44,9 @@ main {
 }
 
 .btn-portfolio-now , .btn-portfolio-now:hover {
-  background: #ff5253;
+  background: #f99324;
   color: #fff;
-  border: 1px solid #ff5253;
+  border: 1px solid #f99324;
   border-radius: 20px;
   font-size: large;
   height: 50px;

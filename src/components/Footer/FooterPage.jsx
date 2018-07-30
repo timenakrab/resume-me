@@ -28,7 +28,7 @@ export default class FooterPage extends Component {
                         </div>
                     }
                     className='example'
-                    style={{backgroundColor : "#ff5253"}}
+                    style={{backgroundColor : "#f99324"}}
                 >
                     <h5 className="white-text">Contact</h5>
                     {/* <p className="grey-text text-lighten-4" style={{fontSize : "20px"}}>968 อาคารอื้อจื่อเหลียง ชั้น 5 ถ.พระราม 4 แขวงสีลม เขตบางรัก กรุงเทพฯ 10500</p> */}

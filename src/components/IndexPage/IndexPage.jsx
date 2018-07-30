@@ -2,10 +2,38 @@ import React, { Component } from 'react'
 import { Parallax, Row, Col, Button, Icon, MediaBox } from 'react-materialize'
 import {Link} from 'react-router-dom'
 import "./IndexPage.css"
-
+var $ = require( 'jquery' )
 
 
 export default class IndexPage extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            parallax_me_img : ""
+        };
+    }
+
+    componentDidMount() {
+        var w = window.innerWidth;
+        if(w < 601){
+            console.log('s',w);
+            $('.parallax-container').css('height' , '200px')
+            this.setState({parallax_me_img : "./assets/parallax-me-small.png"})
+        }else if(w >= 601 && w < 993){
+            console.log('m',w);
+            $('.parallax-container').css('height' , '400px')
+            this.setState({parallax_me_img : "./assets/parallax-me-medium.png"})
+        }else if(w >= 993 && w < 1201){
+            console.log('l',w);
+            $('.parallax-container').css('height' , '500px')
+            this.setState({parallax_me_img : "./assets/parallax-me-large.png"})
+        }else if(w >= 1201){
+            console.log('xl',w);
+            $('.parallax-container').css('height' , '500px')
+            this.setState({parallax_me_img : "./assets/parallax-me-exlarge.png"})
+        }
+    }
+
     componentWillMount() {
         // window.location.href = '#/form/cod/พนักงานหน้าร้าน'
     }
@@ -13,15 +41,15 @@ export default class IndexPage extends Component {
     render() {
         return (
             <div>
-                <Parallax imageSrc="./assets/bg-homepage.jpg"/>
+                <Parallax imageSrc={this.state.parallax_me_img}/>
                 <div className="section white">
                     <div className="row container">
-                        <h2 className="header center-align text-redpink">About Me</h2>
+                        <h2 className="header center-align text-orangefox">About Me</h2>
                         <Row>
-                            <Col s={12} m={3} l={3}>
+                            <Col s={12} m={3} l={2} className="xl2">
                                 <img src="./assets/coffee.png" alt="" style={{width:"100%"}}/>
                             </Col>
-                            <Col s={12} m={9} l={9}>
+                            <Col s={12} m={9} l={10} className="xl10">
                                 <p className="grey-text text-darken-3 lighten-3 font-25">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
                                 <p className="grey-text text-darken-3 lighten-3 font-25 mt-10">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
                                 <Button className="btn-contact-now z-depth-0 hide-on-small-only">Contact Now</Button>
@@ -64,10 +92,10 @@ export default class IndexPage extends Component {
                 </div>
                 <div className="section grey lighten-5">
                     <div className="row container">
-                        <h2 className="header center-align text-redpink">Lastest Works</h2>
+                        <h2 className="header center-align text-orangefox">Lastest Works</h2>
                         <Row>
                             <Col s={12} m={6}>
-                                <h5 className="text-redpink">SHOPPING ONLINE</h5>
+                                <h5 className="text-orangefox">SHOPPING ONLINE</h5>
                                 <Row>
                                     <Col s={12} m={6}>
                                         <MediaBox src="./work/shopping/shopping1.png" caption="SHOPPING ONLINE" width="100%"/>
@@ -78,7 +106,7 @@ export default class IndexPage extends Component {
                                 </Row>
                             </Col>
                             <Col s={12} m={6}>
-                                <h5 className="text-redpink">CAREER WEBSITE</h5>
+                                <h5 className="text-orangefox">CAREER WEBSITE</h5>
                                 <Row>
                                     <Col s={12} m={6}>
                                         <MediaBox src="./assets/Frontend-Dev-Jobs.jpg" caption="CAREER WEBSITE" width="100%"/>
@@ -89,7 +117,7 @@ export default class IndexPage extends Component {
                                 </Row>
                             </Col>
                             <Col s={12} m={6}>
-                                <h5 className="text-redpink">CONTENT ON STREAMIMG</h5>
+                                <h5 className="text-orangefox">CONTENT ON STREAMIMG</h5>
                                 <Row>
                                     <Col s={12} m={6}>
                                         <MediaBox src="./assets/Frontend-Dev-Jobs.jpg" caption="CONTENT ON STREAMIMG" width="100%"/>
@@ -100,7 +128,7 @@ export default class IndexPage extends Component {
                                 </Row>
                             </Col>
                             <Col s={12} m={6}>
-                                <h5 className="text-redpink">HUMAN RESOURCE MANAGEMENT SYSTEM</h5>
+                                <h5 className="text-orangefox">HUMAN RESOURCE MANAGEMENT SYSTEM</h5>
                                 <Row>
                                     <Col s={12} m={6}>
                                         <MediaBox src="./assets/Frontend-Dev-Jobs.jpg" caption="HUMAN RESOURCE MANAGEMENT SYSTEM" width="100%"/>
@@ -111,7 +139,7 @@ export default class IndexPage extends Component {
                                 </Row>
                             </Col>
                         </Row>
-                        <Link to="/"><p className="text-redpink right-align">SEE MORE</p></Link>
+                        <Link to="/"><p className="text-orangefox right-align">SEE MORE</p></Link>
                     </div>
                 </div>
             </div>
