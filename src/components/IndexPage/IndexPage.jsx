@@ -57,7 +57,7 @@ export default class IndexPage extends Component {
                         <h4 className="header center-align">WEB DEVELOPER <span className="text-orangefox">AND</span> FRONT-END DEVELOPER</h4>
                         <Row>
                             <Col s={12} m={3} l={2} className="xl2">
-                                <img src="./assets/coffee.png" alt="" style={{width:"100%"}}/>
+                                <img src="./assets/profile.png" alt="" style={{width:"100%"}}/>
                             </Col>
                             <Col s={12} m={9} l={10} className="xl10">
                                 {/* <p className="grey-text text-darken-3 lighten-3 font-25">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p> */}
@@ -149,10 +149,10 @@ export default class IndexPage extends Component {
                                 <h5 className="text-orangefox">CAREER WEBSITE</h5>
                                 <Row>
                                     <Col s={12} m={6}>
-                                        <MediaBox src="./assets/Frontend-Dev-Jobs.jpg" caption="CAREER WEBSITE" width="100%"/>
+                                        <MediaBox src="./work/recruit/recruit1.jpg" caption="CAREER WEBSITE" width="100%"/>
                                     </Col>
                                     <Col s={12} m={6}>
-                                        <MediaBox src="./assets/Frontend-Dev-Jobs.jpg" caption="CAREER WEBSITE" width="100%"/>
+                                        <MediaBox src="./work/recruit/recruit2.jpg" caption="CAREER WEBSITE" width="100%"/>
                                     </Col>
                                 </Row>
                             </Col>
@@ -160,10 +160,10 @@ export default class IndexPage extends Component {
                                 <h5 className="text-orangefox">CONTENT ON STREAMIMG</h5>
                                 <Row>
                                     <Col s={12} m={6}>
-                                        <MediaBox src="./assets/Frontend-Dev-Jobs.jpg" caption="CONTENT ON STREAMIMG" width="100%"/>
+                                        <MediaBox src="./work/clubrace/clubrace1.jpg" caption="CONTENT ON STREAMIMG" width="100%"/>
                                     </Col>
                                     <Col s={12} m={6}>
-                                        <MediaBox src="./assets/Frontend-Dev-Jobs.jpg" caption="CONTENT ON STREAMIMG" width="100%"/>
+                                        <MediaBox src="./work/clubrace/clubrace2.jpg" caption="CONTENT ON STREAMIMG" width="100%"/>
                                     </Col>
                                 </Row>
                             </Col>
@@ -171,15 +171,15 @@ export default class IndexPage extends Component {
                                 <h5 className="text-orangefox">HUMAN RESOURCE MANAGEMENT SYSTEM</h5>
                                 <Row>
                                     <Col s={12} m={6}>
-                                        <MediaBox src="./assets/Frontend-Dev-Jobs.jpg" caption="HUMAN RESOURCE MANAGEMENT SYSTEM" width="100%"/>
+                                        <MediaBox src="./work/hrm/hrm1.jpg" caption="HUMAN RESOURCE MANAGEMENT SYSTEM" width="100%"/>
                                     </Col>
                                     <Col s={12} m={6}>
-                                        <MediaBox src="./assets/Frontend-Dev-Jobs.jpg" caption="HUMAN RESOURCE MANAGEMENT SYSTEM" width="100%"/>
+                                        <MediaBox src="./work/hrm/hrm2.jpg" caption="HUMAN RESOURCE MANAGEMENT SYSTEM" width="100%"/>
                                     </Col>
                                 </Row>
                             </Col>
                         </Row>
-                        <Link to="/"><p className="text-orangefox right-align">SEE MORE</p></Link>
+                        <Link to="/portfolio"><p className="text-orangefox right-align">SEE MORE</p></Link>
                     </div>
                 </div>
             </div>

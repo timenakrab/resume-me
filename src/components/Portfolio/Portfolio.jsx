@@ -37,7 +37,7 @@ export default class Portfolio extends Component {
                         <h4 className="header center-align">WEB DEVELOPER <span className="text-orangefox">AND</span> FRONT-END DEVELOPER</h4>
                         <Row>
                             <Col s={12} m={3} l={2} className="xl2">
-                                <img src="./assets/coffee.png" alt="" style={{width:"100%"}}/>
+                                <img src="./assets/profile.png" alt="" style={{width:"100%"}}/>
                             </Col>
                             <Col s={12} m={9} l={10} className="xl10">
                                 {/* <p className="grey-text text-darken-3 lighten-3 font-25">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p> */}
@@ -271,12 +271,6 @@ export default class Portfolio extends Component {
                                     </Col>
                                 </Row>
                             </Col>
-                            {/* <Col s={12} className="hide-on-med-and-up show-on-small center-align">
-                                <Button className="btn-contact-now z-depth-0">Contact Now</Button>
-                            </Col>
-                            <Col s={12} className="hide-on-med-and-up show-on-small center-align mt-10">
-                                <Button className="btn-portfolio-now z-depth-0">Portfolio</Button>
-                            </Col> */}
                         </Row>
                     </div>
                 </div>
@@ -284,47 +278,88 @@ export default class Portfolio extends Component {
                     <div className="row container">
                         <h2 className="header center-align text-orangefox">Lastest Works</h2>
                         <Row>
-                            <Col s={12} m={6}>
+                            <Col s={12}>
+                                <h5 className="text-orangefox">MENTAGRAM CLAIM SERVICE</h5>
+                                <Row>
+                                    <Col s={12} m={3}>
+                                        <MediaBox src="./work/mtg/mtg1.jpg" caption="MENTAGRAM CLAIM SERVICE" width="100%"/>
+                                    </Col>
+                                    <Col s={12} m={3}>
+                                        <MediaBox src="./work/mtg/mtg2.jpg" caption="AUTHENCATION WITH AUTH0" width="100%"/>
+                                    </Col>
+                                    <Col s={12} m={3}>
+                                        <MediaBox src="./work/mtg/mtg3.jpg" caption="MENTAGRAM CLAIM SERVICE" width="100%"/>
+                                    </Col>
+                                    <Col s={12} m={3}>
+                                        <MediaBox src="./work/mtg/mtg4.jpg" caption="MENTAGRAM CLAIM SERVICE" width="100%"/>
+                                    </Col>
+                                </Row>
+                            </Col>
+                            <Col s={12}>
                                 <h5 className="text-orangefox">SHOPPING ONLINE</h5>
                                 <Row>
-                                    <Col s={12} m={6}>
+                                    <Col s={12} m={3}>
                                         <MediaBox src="./work/shopping/shopping1.png" caption="SHOPPING ONLINE" width="100%"/>
                                     </Col>
-                                    <Col s={12} m={6}>
+                                    <Col s={12} m={3}>
                                         <MediaBox src="./work/shopping/shopping2.png" caption="SHOPPING ONLINE" width="100%"/>
                                     </Col>
+                                    <Col s={12} m={3}>
+                                        <MediaBox src="./work/shopping/shopping3.png" caption="SHOPPING ONLINE" width="100%"/>
+                                    </Col>
+                                    <Col s={12} m={3}>
+                                        <MediaBox src="./work/shopping/shopping4.png" caption="SHOPPING ONLINE" width="100%"/>
+                                    </Col>
                                 </Row>
                             </Col>
-                            <Col s={12} m={6}>
+                            <Col s={12}>
                                 <h5 className="text-orangefox">CAREER WEBSITE</h5>
                                 <Row>
-                                    <Col s={12} m={6}>
-                                        <MediaBox src="./assets/Frontend-Dev-Jobs.jpg" caption="CAREER WEBSITE" width="100%"/>
+                                    <Col s={12} m={3}>
+                                        <MediaBox src="./work/recruit/recruit1.jpg" caption="CAREER WEBSITE" width="100%"/>
                                     </Col>
-                                    <Col s={12} m={6}>
-                                        <MediaBox src="./assets/Frontend-Dev-Jobs.jpg" caption="CAREER WEBSITE" width="100%"/>
+                                    <Col s={12} m={3}>
+                                        <MediaBox src="./work/recruit/recruit2.jpg" caption="CAREER WEBSITE" width="100%"/>
+                                    </Col>
+                                    <Col s={12} m={3}>
+                                        <MediaBox src="./work/recruit/recruit3.jpg" caption="CAREER WEBSITE" width="100%"/>
+                                    </Col>
+                                    <Col s={12} m={3}>
+                                        <MediaBox src="./work/recruit/recruit4.jpg" caption="CAREER WEBSITE" width="100%"/>
                                     </Col>
                                 </Row>
                             </Col>
-                            <Col s={12} m={6}>
+                            <Col s={12}>
                                 <h5 className="text-orangefox">CONTENT ON STREAMIMG</h5>
                                 <Row>
-                                    <Col s={12} m={6}>
-                                        <MediaBox src="./assets/Frontend-Dev-Jobs.jpg" caption="CONTENT ON STREAMIMG" width="100%"/>
+                                    <Col s={12} m={3}>
+                                        <MediaBox src="./work/clubrace/clubrace1.jpg" caption="CONTENT ON STREAMIMG" width="100%"/>
                                     </Col>
-                                    <Col s={12} m={6}>
-                                        <MediaBox src="./assets/Frontend-Dev-Jobs.jpg" caption="CONTENT ON STREAMIMG" width="100%"/>
+                                    <Col s={12} m={3}>
+                                        <MediaBox src="./work/clubrace/clubrace2.jpg" caption="CONTENT ON STREAMIMG" width="100%"/>
+                                    </Col>
+                                    <Col s={12} m={3}>
+                                        <MediaBox src="./work/clubrace/clubrace3.jpg" caption="CONTENT ON STREAMIMG" width="100%"/>
+                                    </Col>
+                                    <Col s={12} m={3}>
+                                        <MediaBox src="./work/clubrace/clubrace4.jpg" caption="CONTENT ON STREAMIMG" width="100%"/>
                                     </Col>
                                 </Row>
                             </Col>
-                            <Col s={12} m={6}>
+                            <Col s={12}>
                                 <h5 className="text-orangefox">HUMAN RESOURCE MANAGEMENT SYSTEM</h5>
                                 <Row>
-                                    <Col s={12} m={6}>
-                                        <MediaBox src="./assets/Frontend-Dev-Jobs.jpg" caption="HUMAN RESOURCE MANAGEMENT SYSTEM" width="100%"/>
+                                    <Col s={12} m={3}>
+                                        <MediaBox src="./work/hrm/hrm1.jpg" caption="HUMAN RESOURCE MANAGEMENT SYSTEM" width="100%"/>
                                     </Col>
-                                    <Col s={12} m={6}>
-                                        <MediaBox src="./assets/Frontend-Dev-Jobs.jpg" caption="HUMAN RESOURCE MANAGEMENT SYSTEM" width="100%"/>
+                                    <Col s={12} m={3}>
+                                        <MediaBox src="./work/hrm/hrm2.jpg" caption="HUMAN RESOURCE MANAGEMENT SYSTEM" width="100%"/>
+                                    </Col>
+                                    <Col s={12} m={3}>
+                                        <MediaBox src="./work/hrm/hrm3.jpg" caption="HUMAN RESOURCE MANAGEMENT SYSTEM" width="100%"/>
+                                    </Col>
+                                    <Col s={12} m={3}>
+                                        <MediaBox src="./work/hrm/hrm4.jpg" caption="HUMAN RESOURCE MANAGEMENT SYSTEM" width="100%"/>
                                     </Col>
                                 </Row>
                             </Col>
