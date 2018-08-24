@@ -11,7 +11,7 @@ export default class NavbarResume extends Component {
         <NavItem href="#/">HOME</NavItem>
         <NavItem href="#/">About Me</NavItem>
         <NavItem href="#/portfolio">Portfolio</NavItem>
-        <NavItem href="#/">Contact</NavItem>
+        <NavItem onClick={() => window.scrollTo(0,document.querySelector("body").scrollHeight)}>Contact</NavItem>
       </Navbar>
     )
   }
