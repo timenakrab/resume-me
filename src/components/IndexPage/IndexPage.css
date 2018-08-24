@@ -33,3 +33,10 @@ li.list {
 .parallax-small {
     height: 250px;
 }
+
+blockquote {
+    margin: 20px 0;
+    padding-left: 1.5rem;
+    border-left: 5px solid #f99324;
+    font-size: x-large;
+}

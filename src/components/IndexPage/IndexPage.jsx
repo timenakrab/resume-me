@@ -44,14 +44,16 @@ export default class IndexPage extends Component {
                 <Parallax imageSrc={this.state.parallax_me_img}/>
                 <div className="section white">
                     <div className="row container">
-                        <h2 className="header center-align text-orangefox">About Me</h2>
+                        <h2 className="header center-align">I'M <span className="text-orangefox">WATCHARA HONGKIM</span></h2>
+                        <h4 className="header center-align">WEB DEVELOPER <span className="text-orangefox">AND</span> FRONT-END DEVELOPER</h4>
                         <Row>
                             <Col s={12} m={3} l={2} className="xl2">
                                 <img src="./assets/coffee.png" alt="" style={{width:"100%"}}/>
                             </Col>
                             <Col s={12} m={9} l={10} className="xl10">
-                                <p className="grey-text text-darken-3 lighten-3 font-25">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
-                                <p className="grey-text text-darken-3 lighten-3 font-25 mt-10">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+                                {/* <p className="grey-text text-darken-3 lighten-3 font-25">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p> */}
+                                <p className="grey-text text-darken-3 lighten-3 font-25 mt-10">Hi, I'm Watchara Hongkim. I have 2.5 years of experience in web developer and front-end developer. I like to work in team and contact to other people.</p>
+                                <blockquote>No matter what happens, life must go on.</blockquote>
                                 <Button className="btn-contact-now z-depth-0 hide-on-small-only">Contact Now</Button>
                                 <Button className="btn-portfolio-now z-depth-0 hide-on-small-only">Portfolio</Button>
                             </Col>
