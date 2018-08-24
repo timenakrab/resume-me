@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Parallax, Row, Col, Button, Icon, MediaBox } from 'react-materialize'
+import swal from 'sweetalert2'
 import {Link} from 'react-router-dom'
 import "./IndexPage.css"
 var $ = require( 'jquery' )
@@ -13,22 +14,30 @@ export default class IndexPage extends Component {
         };
     }
 
+    CommingSoon() {
+        swal({
+            type: 'info',
+            title: 'Comming soon.',
+            text: 'be under develop.',
+            showConfirmButton: false,
+            timer: 2000,
+            animation: false,
+            customClass: 'animated tada'
+        })
+    }
+
     componentDidMount() {
         var w = window.innerWidth;
         if(w < 601){
-            console.log('s',w);
             $('.parallax-container').css('height' , '200px')
             this.setState({parallax_me_img : "./assets/parallax-me-small.png"})
         }else if(w >= 601 && w < 993){
-            console.log('m',w);
             $('.parallax-container').css('height' , '400px')
             this.setState({parallax_me_img : "./assets/parallax-me-medium.png"})
         }else if(w >= 993 && w < 1201){
-            console.log('l',w);
             $('.parallax-container').css('height' , '500px')
             this.setState({parallax_me_img : "./assets/parallax-me-large.png"})
         }else if(w >= 1201){
-            console.log('xl',w);
             $('.parallax-container').css('height' , '500px')
             this.setState({parallax_me_img : "./assets/parallax-me-exlarge.png"})
         }
@@ -65,19 +74,36 @@ export default class IndexPage extends Component {
                             </Col>
                         </Row>
                         <Row>
+                            <Col m={2} className="hide-on-small-only"></Col>
                             <Col s={12} m={4}>
                                 <div className="pricing-table">
                                     <div className="pricing-header">
                                         <Icon>event_note</Icon>
-                                        <h4>COMMING SOON</h4>
-                                    </div>
-                                </div>
-                            </Col>
-                            <Col s={12} m={4}>
-                                <div className="pricing-table">
-                                    <div className="pricing-header">
-                                        <Icon>star</Icon>
-                                        <h4>COMMING SOON</h4>
+                                        <div className="mb-10">
+                                            <a className="font-21 text-orangefox" rel="noopener noreferrer" href="https://claim.mentagram.com" target="_blank">
+                                                Mentagram claim website
+                                            </a>
+                                        </div>
+                                        {/* <div className="mb-10">
+                                            <a className="font-21 text-orangefox" rel="noopener noreferrer" href="http://www.mentagram.com/home/" target="_blank">
+                                                Authencation on mentagram website
+                                            </a>
+                                        </div> */}
+                                        <div className="mb-10">
+                                            <a className="font-21 text-orangefox" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCaZpyuqNhG36pEadOHYEWPA/videos" target="_blank">
+                                                Content on streaming (CLUBRACE THAILAND)
+                                            </a>
+                                        </div>
+                                        <div className="mb-10">
+                                            <a className="font-21 text-orangefox" rel="noopener noreferrer" onClick={this.CommingSoon} target="_blank">
+                                                Career website
+                                            </a>
+                                        </div>
+                                        <div className="mb-10">
+                                            <a className="font-21 text-orangefox" rel="noopener noreferrer" onClick={this.CommingSoon} target="_blank">
+                                                Humun Resource Management System
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </Col>
@@ -85,10 +111,22 @@ export default class IndexPage extends Component {
                                 <div className="pricing-table">
                                     <div className="pricing-header">
                                         <Icon>whatshot</Icon>
-                                        <h4>COMMING SOON</h4>
+                                        <div className="mb-10">
+                                            <a className="font-21 text-orangefox" rel="noopener noreferrer" href="http://buy.in.th" target="_blank">
+                                                Shopping online (E-SARN OTOP)
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </Col>
+                            {/* <Col s={12} m={4}>
+                                <div className="pricing-table">
+                                    <div className="pricing-header">
+                                        <Icon>whatshot</Icon>
+                                        <h4>COMMING SOON</h4>
+                                    </div>
+                                </div>
+                            </Col> */}
                         </Row>
                     </div>
                 </div>

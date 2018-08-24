@@ -3,6 +3,7 @@ import './App.css';
 import { HashRouter as Router, Route } from 'react-router-dom';
 import NavbarResume from './components/Navbar/NavbarResume';
 import IndexPage from './components/IndexPage/IndexPage'
+import Portfolio from './components/Portfolio/Portfolio';
 
 import Footer from './components/Footer/FooterPage'
 
@@ -14,6 +15,8 @@ class App extends Component {
           <main>
             <NavbarResume/>
             <Route exact path="/" component={IndexPage} />
+            <Route path="/portfolio" component={Portfolio} />
+
             {/* <Route path="/form/:company/:job" component={CardId} />
             <Route path="/form-recruit" component={FormRecruit} />
             <Route path="/update-recruit" component={UpdateRecruit} /> */}

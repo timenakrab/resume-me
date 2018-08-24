@@ -10,7 +10,7 @@ export default class NavbarResume extends Component {
       <Navbar id="nav-resume" right>
         <NavItem href="#/">HOME</NavItem>
         <NavItem href="#/">About Me</NavItem>
-        <NavItem href="#/">Portfolio</NavItem>
+        <NavItem href="#/portfolio">Portfolio</NavItem>
         <NavItem href="#/">Contact</NavItem>
       </Navbar>
     )

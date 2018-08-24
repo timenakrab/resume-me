@@ -25,12 +25,20 @@ main {
   font-size: 18px;
 }
 
+.font-21 {
+  font-size: 21px;
+}
+
 .font-25 {
   font-size: 25px;
 }
 
 .mt-10 {
   margin-top: 10px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
 }
 
 .btn-contact-now , .btn-contact-now:hover {
