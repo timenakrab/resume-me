@@ -34,7 +34,7 @@ export default class FooterPage extends Component {
                     {/* <p className="grey-text text-lighten-4" style={{fontSize : "20px"}}>968 อาคารอื้อจื่อเหลียง ชั้น 5 ถ.พระราม 4 แขวงสีลม เขตบางรัก กรุงเทพฯ 10500</p> */}
                     <ul>
                         <li><a className="grey-text text-lighten-3" href="tel:+66846265206" style={{fontSize : "20px"}}><i className="material-icons">phone_in_talk</i> : 0846265206</a></li>
-                        <li><a className="grey-text text-lighten-3" href="mailto:timenakrab@gmail.com" style={{fontSize : "20px"}}><i className="material-icons">mail</i> : timenakrab@gmail.com</a></li>
+                        <li><a className="grey-text text-lighten-3" href="mailto:watchara.hongkim@gmail.com" style={{fontSize : "20px"}}><i className="material-icons">mail</i> : watchara.hongkim@gmail.com</a></li>
                     </ul>
 
                 </Footer>
