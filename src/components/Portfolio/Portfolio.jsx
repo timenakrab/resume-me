@@ -77,7 +77,7 @@ export default class Portfolio extends Component {
                                         <p className="font-18"><Icon left>chevron_right</Icon>Frontend Developer</p>
                                         <p className="font-18"><Icon left>chevron_right</Icon>Web Developer</p>
                                         <p className="font-18"><Icon left>chevron_right</Icon>Web Design and Developer</p>
-                                        <h4>Available to start a new job</h4>
+                                        <h4 className="text-orangefox">Available to start a new job</h4>
                                         <p className="font-18"><Icon left>chevron_right</Icon>1 month notice</p>
                                     </Col>
                                     <Col s={12} m={6}>
