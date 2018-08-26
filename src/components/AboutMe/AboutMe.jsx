@@ -60,7 +60,7 @@ export default class AboutMe extends Component {
                                 <blockquote>No matter what happens, life must go on.</blockquote>
                                 <Row>
                                     <Col s={12} m={6}>
-                                        <h4>Personal data</h4>
+                                        <h4 className="text-orangefox">Personal data</h4>
                                         <p className="font-18"><Icon left>chevron_right</Icon>Nationality : Thai</p>
                                         <p className="font-18"><Icon left>chevron_right</Icon>Height : 178.0 Cm.</p>
                                         <p className="font-18 hide-on-med-and-up show-on-small"><Icon left>chevron_right</Icon>Weight : 98.0 Kg.</p>
@@ -74,12 +74,12 @@ export default class AboutMe extends Component {
                                 </Row>
                                 <Row>
                                     <Col s={12} m={6}>
-                                        <h4>Education</h4>
+                                        <h4 className="text-orangefox">Education</h4>
                                         <p className="font-18"><Icon left>chevron_right</Icon>Bachelor Degree at Information Technology, Faculty of Informatics , Burapha University (2554 - 2557)</p>
                                         <p className="font-18"><Icon left>chevron_right</Icon>High School, Wichienmatu School (2551 - 2553)</p>
                                     </Col>
                                     <Col s={12} m={6}>
-                                        <h4>Location</h4>
+                                        <h4 className="text-orangefox">Location</h4>
                                         <p className="font-18"><Icon left>chevron_right</Icon>Bangkok</p>
                                     </Col>
                                 </Row>

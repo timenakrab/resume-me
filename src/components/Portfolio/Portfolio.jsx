@@ -45,7 +45,7 @@ export default class Portfolio extends Component {
                                 <blockquote>No matter what happens, life must go on.</blockquote>
                                 <Row>
                                     <Col s={12} m={6}>
-                                        <h4>Personal data</h4>
+                                        <h4 className="text-orangefox">Personal data</h4>
                                         <p className="font-18"><Icon left>chevron_right</Icon>Nationality : Thai</p>
                                         <p className="font-18"><Icon left>chevron_right</Icon>Height : 178.0 Cm.</p>
                                         <p className="font-18"><Icon left>chevron_right</Icon>Weight : 98.0 Kg.</p>
@@ -60,18 +60,18 @@ export default class Portfolio extends Component {
                                 </Row>
                                 <Row>
                                     <Col s={12} m={6}>
-                                        <h4>Education</h4>
+                                        <h4 className="text-orangefox">Education</h4>
                                         <p className="font-18"><Icon left>chevron_right</Icon>Bachelor Degree at Information Technology, Faculty of Informatics , Burapha University (2554 - 2557)</p>
                                         <p className="font-18"><Icon left>chevron_right</Icon>High School, Wichienmatu School (2551 - 2553)</p>
                                     </Col>
                                     <Col s={12} m={6}>
-                                        <h4>Location</h4>
+                                        <h4 className="text-orangefox">Location</h4>
                                         <p className="font-18"><Icon left>chevron_right</Icon>Bangkok</p>
                                     </Col>
                                 </Row>
                                 <Row>
                                     <Col s={12} m={6}>
-                                        <h4>TARGET JOB</h4>
+                                        <h4 className="text-orangefox">TARGET JOB</h4>
                                         <p className="font-18">Job type: Full Time</p>
                                         <p className="font-18">Job Field: (Ranked in order)</p>
                                         <p className="font-18"><Icon left>chevron_right</Icon>Frontend Developer</p>
@@ -81,7 +81,7 @@ export default class Portfolio extends Component {
                                         <p className="font-18"><Icon left>chevron_right</Icon>1 month notice</p>
                                     </Col>
                                     <Col s={12} m={6}>
-                                        <h4>Languages</h4>
+                                        <h4 className="text-orangefox">Languages</h4>
                                         <Table>
                                             <thead>
                                                 <tr>
@@ -128,7 +128,7 @@ export default class Portfolio extends Component {
                                 </Row>
                                 <Row>
                                     <Col s={12} m={3}>
-                                        <h4>SKILL</h4>
+                                        <h4 className="text-orangefox">SKILL</h4>
                                         <Table>
                                             <thead>
                                                 <tr>
@@ -265,6 +265,31 @@ export default class Portfolio extends Component {
                                                         <img src="./assets/star-regular.svg" alt="" width="30" height="30"/>
                                                         <img src="./assets/star-regular.svg" alt="" width="30" height="30"/>
                                                     </td>
+                                                </tr>
+                                            </tbody>
+                                        </Table>
+                                    </Col>
+                                    <Col s={12}>
+                                        <h4 className="text-orangefox">WORK EXPERIENCE</h4>
+                                        <Table>
+                                            <thead>
+                                                <tr>
+                                                    <th data-field="platporm">Company</th>
+                                                    <th data-field="rank">Position</th>
+                                                    <th data-field="rank">Years</th>
+                                                </tr>
+                                            </thead>
+
+                                            <tbody>
+                                                <tr>
+                                                    <td>KRATOS CO.,LTD.</td>
+                                                    <td>Web developer</td>
+                                                    <td>September 2016 - Present</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>ASHITA GROUP CO.,LTD.</td>
+                                                    <td>Web Application developer & Creative</td>
+                                                    <td>May 2015 - October 2015</td>
                                                 </tr>
                                             </tbody>
                                         </Table>
