@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Parallax, Row, Col, Button, Icon,  } from 'react-materialize'
 import swal from 'sweetalert2'
+import ReactGA from 'react-ga'
 import "../IndexPage/IndexPage.css"
 var $ = require( 'jquery' )
 
@@ -26,6 +27,8 @@ export default class AboutMe extends Component {
     }
 
     componentDidMount() {
+        ReactGA.initialize('UA-124607706-1')
+        ReactGA.pageview(window.location.hash)
         var w = window.innerWidth;
         if(w < 601){
             $('.parallax-container').css('height' , '200px')

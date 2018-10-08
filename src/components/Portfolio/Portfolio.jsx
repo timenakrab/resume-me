@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Parallax, Row, Col, Table, Icon, MediaBox } from 'react-materialize'
+import ReactGA from 'react-ga'
 var $ = require( 'jquery' )
 
 export default class Portfolio extends Component {
@@ -7,10 +8,12 @@ export default class Portfolio extends Component {
         super(props);
         this.state = {
             parallax_me_img : ""
-        };
+        }
     }
 
     componentDidMount() {
+        ReactGA.initialize('UA-124607706-1')
+        ReactGA.pageview(window.location.hash)
         var w = window.innerWidth;
         if(w < 601){
             $('.parallax-container').css('height' , '200px')

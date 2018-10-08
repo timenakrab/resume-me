@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Parallax, Row, Col, Button, Icon, MediaBox } from 'react-materialize'
 import swal from 'sweetalert2'
 import {Link} from 'react-router-dom'
+import ReactGA from 'react-ga'
 import "./IndexPage.css"
 var $ = require( 'jquery' )
 
@@ -27,6 +28,8 @@ export default class IndexPage extends Component {
     }
 
     componentDidMount() {
+        ReactGA.initialize('UA-124607706-1')
+        ReactGA.pageview(window.location.hash)
         var w = window.innerWidth;
         if(w < 601){
             $('.parallax-container').css('height' , '200px')
